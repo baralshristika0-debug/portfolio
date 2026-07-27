@@ -289,17 +289,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: 0.08em;
 }
 .access-card-photo {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: 8px;
-  background:
-    radial-gradient(circle at 50% 35%, #2c3a5c 0 22%, transparent 23%),
-    radial-gradient(circle at 50% 100%, #2c3a5c 0 34%, transparent 35%),
-    var(--surface);
+  width: 140px;
+  aspect-ratio: 7 / 9;      /* passport photo proportions */
+  border-radius: 6px;
   border: 1px solid var(--border);
-  margin-bottom: 1rem;
-  position: relative;
-  overflow: hidden;
+  margin: 0 auto 1rem;      /* center it instead of full-width */
+  object-fit: cover;
+  display: block;
 }
 .access-card-photo::after {
   content: "";
