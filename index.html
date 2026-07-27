@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shristika Baral — Digital Identity Portfolio</title>
+<meta name="description" content="Personal portfolio of Shristika Baral — Network Technology & Cybersecurity student.">
+
+<!-- Google Fonts: display / body / mono roles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV (status bar) ============ -->
+<header class="statusbar">
+  <div class="container">
+    <div class="statusbar-id">
+      <span class="dot" aria-hidden="true"></span>
+      Shristika Baral
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero container" id="top">
+    <div>
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+          identity.sh
+        </div>
+        <div class="terminal-body">
+          <div id="boot-log"></div>
+          <div class="line"><span class="prompt">&gt;</span><span id="typed-line"></span></div>
+        </div>
+      </div>
+
+      <h1 class="hero-heading">
+        <span class="role">Network Technology &amp; Cybersecurity Student</span>
+        Hi, I'm <span style="color: var(--primary)">Shristika Baral</span> —
+        I build and secure the systems people trust.
+      </h1>
+      <p>I design responsive web experiences and study how identity, access, and trust hold networks together. This portfolio is both a showcase and a mini-project: HTML5, CSS Grid/Flexbox, and vanilla JS, deployed live.</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Request access →</a>
+      </div>
+    </div>
+
+    <!-- Signature element: Digital Access Card -->
+    <div class="access-card reveal">
+      <div class="access-card-top">
+        <span>ID · PORTFOLIO-01</span>
+        <span>BCS · NTC</span>
+      </div>
+      <div class="access-card-photo" role="img" aria-label="Portrait placeholder"></div>
+      <div class="access-card-name">Shristika Baral</div>
+      <div class="access-card-title">Cybersecurity &amp; Web Development</div>
+      <dl class="access-card-meta">
+        <div><dt>Clearance</dt><dd>Level 3 — Developer</dd></div>
+        <div><dt>Issued</dt><dd>Semester 4</dd></div>
+        <div><dt>Location</dt><dd>Kathmandu, NP</dd></div>
+        <div><dt>Expires</dt><dd>Never</dd></div>
+      </dl>
+      <span class="access-card-status"><span class="dot"></span>ACCESS GRANTED</span>
+      <div class="access-card-barcode" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="container reveal">
+    <p class="section-label">01 · identity file</p>
+    <div class="about-grid">
+      <div>
+        <h2>About me</h2>
+        <p>I'm a fourth-semester Computer Science student specializing in Network Technology &amp; Cybersecurity. I like the overlap between how a website is built and how it's kept safe — clean semantic markup, thoughtful layout, and an eye for what could go wrong.</p>
+        <p>Outside coursework, I'm usually deep in a CTF challenge, tinkering with a Raspberry Pi, or refining this portfolio. This project itself doubles as coursework for <strong>WBD-113 Web Designing</strong>: it demonstrates HTML5 semantics, responsive CSS, and JavaScript interaction end to end.</p>
+      </div>
+      <div class="diagnostics">
+        <h3>// permissions.log</h3>
+        <div class="diag-row"><span>HTML5 &amp; semantic markup</span><span class="perm">granted</span></div>
+        <div class="diag-row"><span>CSS Grid / Flexbox</span><span class="perm">granted</span></div>
+        <div class="diag-row"><span>Responsive design</span><span class="perm">granted</span></div>
+        <div class="diag-row"><span>JavaScript (DOM, events)</span><span class="perm">granted</span></div>
+        <div class="diag-row"><span>Network fundamentals</span><span class="perm">granted</span></div>
+        <div class="diag-row"><span>Git &amp; deployment</span><span class="perm">granted</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="container reveal">
+    <p class="section-label">02 · installed modules</p>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="glyph">&lt;/&gt;</span>
+        <h4>HTML5 &amp; CSS3</h4>
+        <p>Semantic structure, Grid &amp; Flexbox layout, responsive media queries.</p>
+      </div>
+      <div class="skill-card">
+        <span class="glyph">fn()</span>
+        <h4>JavaScript</h4>
+        <p>DOM interaction, events, and small client-side utilities.</p>
+      </div>
+      <div class="skill-card">
+        <span class="glyph">net</span>
+        <h4>Networking</h4>
+        <p>TCP/IP fundamentals, subnetting, and network troubleshooting.</p>
+      </div>
+      <div class="skill-card">
+        <span class="glyph">sec</span>
+        <h4>Cybersecurity</h4>
+        <p>Threat modeling basics, secure coding habits, CTF practice.</p>
+      </div>
+      <div class="skill-card">
+        <span class="glyph">git</span>
+        <h4>Git &amp; GitHub</h4>
+        <p>Version control, branching, and clean commit history.</p>
+      </div>
+      <div class="skill-card">
+        <span class="glyph">ux</span>
+        <h4>UI/UX</h4>
+        <p>Layout planning, typography, and accessible color contrast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="container reveal">
+    <p class="section-label">03 · case files</p>
+    <h2>Projects</h2>
+
+    <div class="filter-bar" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+      <button class="filter-btn" data-filter="network">Network</button>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card" data-tags="web">
+        <div class="project-thumb"><span class="case-no">CASE-01</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">Web</span><span class="tag">Responsive</span></div>
+          <h3>Digital Identity Portfolio</h3>
+          <p>This site — a responsive, semantic portfolio built with vanilla HTML/CSS/JS for WBD-113.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="#" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="security">
+        <div class="project-thumb"><span class="case-no">CASE-02</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">Security</span><span class="tag">CLI</span></div>
+          <h3>Password Strength Auditor</h3>
+          <p>A command-line tool that scores password strength against common attack patterns.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Write-up ↗</a>
+            <a href="#" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="network">
+        <div class="project-thumb"><span class="case-no">CASE-03</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">Network</span><span class="tag">Lab</span></div>
+          <h3>Home Lab Network Map</h3>
+          <p>Segmented a home network into VLANs and documented the topology and firewall rules.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Diagram ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="web security">
+        <div class="project-thumb"><span class="case-no">CASE-04</span></div>
+        <div class="project-body">
+          <div class="project-tags"><span class="tag">Web</span><span class="tag">Security</span></div>
+          <h3>Secure Login Form Demo</h3>
+          <p>A front-end demo of input validation, rate-limit messaging, and safe form UX patterns.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="#" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="container reveal">
+    <p class="section-label">04 · secure transmission</p>
+    <h2>Get in touch</h2>
+    <div class="contact-grid">
+      <form class="contact-form" id="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Transmit message</button>
+        <p class="form-note"></p>
+      </form>
+
+      <div class="contact-channels">
+        <div class="channel"><span class="k">Email</span><a class="v" href="mailto:baralshristika0@gmail.com">baralshristika0@gmail.com</a></div>
+        <div class="channel"><span class="k">GitHub</span><a class="v" href="https://github.com/baralshristika0-debug" target="_blank" rel="noopener">github.com/shristika Baral</a></div>
+        <div class="channel"><span class="k">LinkedIn</span><a class="v" href="https://www.linkedin.com/in/shristika-baral-55991a366/" target="_blank" rel="noopener">linkedin.com/in/Shristika-Baral</a></div>
+        <div class="channel"><span class="k">Location</span><span class="v">Kathmandu, Nepal</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container">
+  <span>&copy; <span id="year"></span> Your Name. Built for WBD-113.</span>
+  <span class="mono">status: connection secure</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
